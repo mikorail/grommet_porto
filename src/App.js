@@ -1,39 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Box,Grommet } from 'grommet';
-
-const AppBar = (props) => (
-  <Box
-    tag='header'
-    direction='row'
-    align='center'
-    justify='between'
-    background='brand'
-    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-    elevation='medium'
-    style={{ zIndex: '1' }}
-    {...props}
-  />
-);
-
+import React,{Component} from 'react';
+import MyAppBar from './components/MyAppBar';
+import { Grommet } from 'grommet';
 const theme = {
   global: {
     font: {
-      family: 'Source Code Pro',
-      size: '14px',
-      height: '20px',
+      family: 'Press Start 2P',
+      size: '12px',
+      height: '12px',
     },
   },
 };
 
 function App() {
   return (
-    <div className="App">
-      <AppBar>
-        Hello Grommet
-      </AppBar>
-    </div>
+    <Grommet theme={theme}>
+      <MyAppBar/>
+    </Grommet>
   );
 }
 

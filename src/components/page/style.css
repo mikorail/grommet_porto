@@ -1,0 +1,13 @@
+body{
+    font-display: Press Start 2P;
+    font-family:'Press Start 2P',cursive;
+}
+.imageBG{
+    margin-left: -35%;
+    float:left;
+    width: 600px;
+}
+h1{
+    float: right;
+    margin-top:10%;
+}
