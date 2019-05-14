@@ -5,8 +5,8 @@ class Contact extends React.Component {
     render(){
         return(
             <div>
-                <h1>Contact page</h1>
-                <Facebook size="xsmall"/> Pratito Sujatmiko
+                 <h1>Contact page</h1>
+                <img className="imageBG" src={require('./img/02.png')}/>
             </div>
         )
     }

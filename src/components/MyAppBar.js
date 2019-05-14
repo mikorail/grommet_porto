@@ -1,17 +1,23 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
-import { Box, Button, Collapsible, Heading, Grommet,ResponsiveContext,Layer} from 'grommet';
+import { Box, Button, Collapsible, Heading, Grommet,ResponsiveContext,Layer,Clock} from 'grommet';
 import { grommet } from "grommet/themes";
 import Content from "./Content";
 import { FormClose,Notification } from 'grommet-icons';
+import './style.css'
 
  
-    
+const jam = {
+  marginLeft:'85%',
+  marginTop:'10px',
+  float:'right',
+  color: 'black',
+}; 
+
 const theme = {
     global: {
       font: {
-        family: 'Press Start 2P',
         size: '14px',
         height: '20px',
       },
@@ -22,7 +28,7 @@ const AppBar = (props) => (
         tag='header'
         direction='row'
         align='left'
-        background='brand'
+        background='white'
         justify='start'
         pad={{ left: 'small', right: 'small', vertical: 'small' }}
         elevation='medium'
@@ -42,9 +48,10 @@ const AppBar = (props) => (
             {size => (
             <Box fill>
                 <AppBar>
-                    <Button icon={<Notification />}
+                    <img className="icon" src={require('./page/img/01.png')}
                     onClick={() => this.setState(prevState => ({ showSidebar: !prevState.showSidebar }))}
-                    />            
+                    />
+                     <Clock style={jam} type="digital" />          
                 </AppBar>
                 <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
                  <Box full flex align='center' justify='center'>
@@ -59,17 +66,17 @@ const AppBar = (props) => (
                     align='center'
                     justify='center'>
                         <Link style={{ textDecoration: 'none', color: 'brand' }} to="/home">
-                        <b><i>MIKORAIL.ME</i></b>
-                        &nbsp;&nbsp;&nbsp;
+                        <h4><b><i>MIKORAIL.ME</i></b></h4>
+                        &nbsp;
                         </Link>
                         <Link style={{ textDecoration: 'none', color: 'brand' }} to="/profile">
-                        <b>PROFILE</b>&nbsp;
+                        <h4><b>PROFILE</b>&nbsp;</h4>
                         </Link>
                         <Link style={{ textDecoration: 'none', color: 'brand' }} to="/portofolio">
-                        <b>PORTOFOLIO</b>&nbsp;
+                        <h4><b>PORTOFOLIO</b>&nbsp;</h4>
                         </Link>
                         <Link style={{ textDecoration: 'none', color: 'brand' }} to="/contact">
-                        <b>CONTACT</b>&nbsp;
+                        <h4><b>CONTACT</b>&nbsp;</h4>
                         </Link>    
                     </Box>
                 </Collapsible>

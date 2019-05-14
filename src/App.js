@@ -4,7 +4,7 @@ import { Grommet } from 'grommet';
 const theme = {
   global: {
     font: {
-      family: 'Press Start 2P',
+      family: 'Gloria Hallelujah',
       size: '12px',
       height: '12px',
     },
