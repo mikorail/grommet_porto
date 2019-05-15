@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import axios from 'axios';
-import { Heading,Box } from 'grommet';
+import { Heading,Box,Image } from 'grommet';
 
 const style={
 
@@ -22,16 +22,16 @@ export default class Portofolio extends React.Component {
     render(){
         return(
             <div>
-                <Heading>
+                <Box full clasName="mabur">
+                <Heading className="kanan3" size="small">
                     Portofolio page
-                <ul>
-                    { this.state.portofolios.map(portofolio => <li>{portofolio.nama+portofolio.deskripsi}</li>)}
-                </ul>
+                    <ul>
+                        { this.state.portofolios.map(portofolio => <li>{portofolio.nama+portofolio.deskripsi}</li>)}
+                    </ul>
                 </Heading>
                 <Box>
-                    <img className="imageBG" src={require('./img/10.png')}/>
+                    <Image className="imageBG3" src={require('./img/10.png')}/>
                 </Box>
-                <Box> 
                     
                 </Box>
             </div>

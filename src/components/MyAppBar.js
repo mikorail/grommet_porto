@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import { Box, Button, Collapsible, Heading, Grommet,ResponsiveContext,Layer,Clock} from 'grommet';
 import { grommet } from "grommet/themes";
 import Content from "./Content";
-import { FormClose,Notification } from 'grommet-icons';
+import { FormClose,Notification, Archive } from 'grommet-icons';
 import './style.css'
 
  
@@ -48,7 +48,7 @@ const AppBar = (props) => (
             {size => (
             <Box fill>
                 <AppBar>
-                    <img className="icon" src={require('./page/img/01.png')}
+                    <Archive color="black"
                     onClick={() => this.setState(prevState => ({ showSidebar: !prevState.showSidebar }))}
                     />
                      <Clock style={jam} type="digital" />          
