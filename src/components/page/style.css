@@ -1,20 +1,25 @@
-
+.main{
+    width:auto;
+    height: 100%;
+    padding-left: 7%;
+}
 .imageBG{
+    display: flex;
     float:left;
+    clear: both;
     z-index: 1;
-    max-width:50%;
-    margin-top:-20%;
-    margin-left: -20%;
+    max-width:55%;
+    margin-left: -25%;
         /* background-image: url(/src/components/page/img/01.png); */
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 .imageBG1{
+    display: flex;
     float:left;
     clear: both;
     z-index: 1;
     max-width:40%;
-    margin-top:-17%;
+    margin-top:-80%;
     margin-left: 0%;
     /* background-image: url(/src/components/page/img/01.png); */
     background-repeat: no-repeat;
@@ -60,14 +65,20 @@ h1{
 }
 .kanan{
     float: right;
-    margin-left: 50%;
-    margin-top:-40%;
+    margin-left: 60%;
+    margin-top:35%;
 }
 .kanan1{
     clear: both;
     float: right;
+    margin-top:35%;
+    margin-left:60%;
+}
+.kanann{
+    clear: both;
+    float: right;
+    margin-top:0%;
     margin-left:50%;
-    margin-top:5%;
 }
 .kanan2{
     clear: both;
@@ -79,17 +90,88 @@ h1{
     clear: both;
     float: right;
     margin-left:50%;
-    margin-top:5%;
+    margin-top:25%;
+}
+.panel{
+    margin-left:-5%;
+    clear: both;
+    max-width: 300px;
+    height: 300px;
+    margin-right:2.5%;
+    float:left;
+    border-radius: 3%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.panelInt{
+    margin-left:-5%;
+    clear: both;
+    max-width: 300px;
+    height: auto;
+    margin-right:2.5%;
+    float:left;
+    border-radius: 3%;
+    background-color: blueviolet;
+    text-align: center;
+}
+.paneledu{
+    clear: both;
+    max-width: 500px;
+    margin-right:2.5%;
+    float:left;
+    border-radius: 3%;
+    background-color: blueviolet;
+    text-align: left;
+}
+.panelBio{
+    max-width: 300px;
+    height: 300px;
+    clear:both;
+    margin-right:2.5%;
+    padding-top: 2%;
+    float:left;
+    border-radius: 3%;
+    background-color: blueviolet;
+    text-align: left;
+}
+.tengah{
+    margin-left: 0%;
+   display:flex;
+    float: left;
+    color:white;
+    font-size: 10%;    
+}
+.newline{
+    margin-left: 0%;
+    display: block;
+    float: left;
+    color:white;
+    font-size: 10%;
+    
 }
 .pp{
     border-style: solid;
     border-width: 5px;
-    width: 10%;
-    height: 10%;
-    float: left;
-    margin-left: 55%;
+    max-width: 50%;
+    max-height: 50%;
+    align-self: center;
+    display:flex;
     border-radius: 100%;
-    border-color: blueviolet;
+    border-color: white;
+}
+.interest{
+    float: left;
+    margin-left:65%;
+
+}
+.kui{
+    display: flex;
+    margin-top:50%;
+}
+.iku{
+    display: flex;
+    margin-top:-85%;
 }
 .link{
     margin-top:-60%;
@@ -102,5 +184,5 @@ h1{
     width:20%;
 }
 .mabur{
-    margin-top:-10%;
+    margin-top:-25%;
 }
